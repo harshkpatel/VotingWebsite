@@ -1,0 +1,126 @@
+body {
+    background-color: #89CFF0;
+}
+
+#modal {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+#extraneous {
+    align-items: center;
+    display: flex;
+    height: 68vh;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    width: 51vw;
+    z-index: -999;
+}
+
+#modalContent {
+    background-color: black;
+    cursor: pointer;
+    height: 36vh;
+    overflow: hidden;
+    position: relative;
+    width: 27vw;
+    z-index: 9;
+}
+
+#cat {
+    bottom: 0;
+    height: 30%;
+    position: absolute;
+}
+
+#message {
+    height: 90%;
+    left: 15%;
+    position: absolute;
+    top: -10%;
+}
+
+#plane {
+    display: none;
+}
+
+#plane.animate {
+    animation: travel 6s linear 1s;
+    height: 30%;
+    position: absolute;
+}
+
+@keyframes travel {
+    0% {
+        bottom: -15%;
+        left: -15%;
+    }
+
+    100% {
+        bottom: 100%;
+        left: 100%;
+    }
+}
+
+#buttons {
+    bottom: 2%;
+    position: absolute;
+    right: 2%;
+}
+
+#modal .btn {
+    font-size: 1.7vw;
+}
+
+#holder {
+    height: 90%;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#graph {
+    display: block;
+    float: left;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 2vh;
+    width: 45%;
+}
+
+#winner {
+    display: block;
+    float: left;
+    font-size: 2vw;
+    height: 95%;
+    margin-left: 3%;
+    width: 45%;
+}
+
+#winner img {
+    height: 95%;
+    width: 100%;
+}
+
+#title {
+    font-size:3vw;
+}
+
+#graph .btn {
+    float: right;
+    font-size: 1.7vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}

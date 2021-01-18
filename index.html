@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSFiles/index.css">
+    <title> Vote </title>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modalContent">
+            <br>Please enter your code:<input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-lg" id="submit"> Submit </button>
+        </div>
+    </div>
+    <div id="heading">
+        <img src="Images/enhancement.png">
+        <div id="text">
+            <h1>Application 15 Videos</h1>
+            <h2> Which Video Was the Best? </h2>
+            <p> The Applications 15 class made a wide assortment of videos. Rate each one from a range of 1 - 10; 1 being the best and 10 being the worst </p>
+        </div>
+        <img src="Images/enhancement.png">
+    </div>
+    <div id="voting">
+        <div id="options">
+            <h1> Rate Each Team (1 - 10) </h1>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        1</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        2</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        3</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        4</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        5</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        6</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        7</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        8</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        9</span></label>
+            </div>
+            <div class="radio">
+                <label><input type="number" class="form-control userIn" min="1" max="10"><span class="choice">Team
+                        10</span></label>
+            </div>
+            <div class="selection">
+                <button type="button" class="btn btn-lg btn-danger">Vote</button>
+                <button type="button" class="btn btn-lg" id="special">Results</button>
+            </div>
+        </div>
+        <div class="slider">
+
+            <input type="radio" name="slide" id="i1" checked>
+            <input type="radio" name="slide" id="i2">
+            <input type="radio" name="slide" id="i3">
+            <input type="radio" name="slide" id="i4">
+            <input type="radio" name="slide" id="i5">
+            <input type="radio" name="slide" id="i6">
+            <input type="radio" name="slide" id="i7">
+            <input type="radio" name="slide" id="i8">
+            <input type="radio" name="slide" id="i9">
+            <input type="radio" name="slide" id="i10">
+
+            <div class="slide" id="one">
+                <img src="Images/Team 1.jpg"><p>Team 1</p>
+                <label for="i10" class="pre"><span></span></label>
+                <label for="i2" class="nxt"><span></span></label>
+
+            </div>
+            <div class="slide" id="two">
+                <img src="Images/Team 2.jpg"><p>Team 2</p>
+                <label for="i1" class="pre"><span></span></label>
+                <label for="i3" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="three">
+                <img src="Images/Team 3.jpg"><p>Team 3</p>
+                <label for="i2" class="pre"><span></span></label>
+                <label for="i4" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="four">
+                <img src="Images/Team 4.png"><p>Team 4</p>
+                <label for="i3" class="pre"><span></span></label>
+                <label for="i5" class="nxt"><span></span></label>
+
+            </div>
+            <div class="slide" id="five">
+                <img src="Images/Team 5.jpg"><p>Team 5</p>
+                <label for="i4" class="pre"><span></span></label>
+                <label for="i6" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="six">
+                <img src="Images/Team 6.png"><p>Team 6</p>
+                <label for="i5" class="pre"><span></span></label>
+                <label for="i7" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="seven">
+                <img src="Images/Team 7.jpg">
+                <p>Team 7</p>
+                <label for="i6" class="pre"><span></span></label>
+                <label for="i8" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="eight">
+                <img src="Images/Team 8.jpg"><p>Team 8</p>
+                <label for="i7" class="pre"><span></span></label>
+                <label for="i9" class="nxt"><span></span></label>
+
+            </div>
+            <div class="slide" id="nine">
+                <img src="Images/Team 9.png"><p>Team 9</p>
+                <label for="i8" class="pre"><span></span></label>
+                <label for="i10" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="ten">
+                <img src="Images/Team 10.jpg"><p>Team 10</p>
+                <label for="i9" class="pre"><span></span></label>
+                <label for="i1" class="nxt"><span></span></label>
+            </div>
+            <div class="slide" id="back">
+                <img src="Images/background.jpg">
+            </div>
+            <div class="dots">
+                <label for="i1" class="dot" id="dot1"></label>
+                <label for="i2" class="dot" id="dot2"></label>
+                <label for="i3" class="dot" id="dot3"></label>
+                <label for="i4" class="dot" id="dot4"></label>
+                <label for="i5" class="dot" id="dot5"></label>
+                <label for="i6" class="dot" id="dot6"></label>
+                <label for="i7" class="dot" id="dot7"></label>
+                <label for="i8" class="dot" id="dot8"></label>
+                <label for="i9" class="dot" id="dot9"></label>
+                <label for="i10" class="dot" id="dot10"></label>
+
+            </div>
+        </div>
+    </div>
+    <script src="JSFiles/index.js"></script>
+</body>
+
+</html>
